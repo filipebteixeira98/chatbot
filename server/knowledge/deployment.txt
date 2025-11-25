@@ -1,0 +1,49 @@
+Deployment Steps (Simple)
+
+1. Preparation
+Build Project: Run your build command (e.g., npm run build, mvn clean install).
+
+Verify Artifacts: Check the output folder (e.g., dist, build) to ensure files are present.
+
+2. Server Access
+Connect: Use SSH or an SFTP client to connect to the target server.
+
+3. Deployment
+Backup (Optional): Rename the current live directory (e.g., mv /var/www/app /var/www/app_old).
+
+Transfer: Copy the new built files to the correct server directory (e.g., /var/www/app).
+
+Permissions: Set file and directory permissions (e.g., chmod -R 755 /var/www/app).
+
+4. Finalization
+Restart Service: Restart the web server or application process (e.g., sudo systemctl restart nginx or docker-compose restart).
+
+Verify Live Site: Open the application's URL in a browser to confirm it's working.
+
+Cleanup (If Backup Taken): Delete the old backup directory if the new deployment is stable (e.g., rm -rf /var/www/app_old).
+
+===
+
+Etapas de Implantação (Simples)
+
+1. Preparação
+Construir o Projeto: Execute o comando de construção (por exemplo, `npm run build`, `mvn clean install`).
+
+Verificar Artefatos: Verifique a pasta de saída (por exemplo, `dist`, `build`) para garantir que os arquivos estejam presentes.
+
+2. Acesso ao Servidor
+Conexão: Use SSH ou um cliente SFTP para conectar-se ao servidor de destino.
+
+3. Implantação
+Backup (Opcional): Renomeie o diretório atual (por exemplo, `mv /var/www/app /var/www/app_old`).
+
+Transferência: Copie os novos arquivos construídos para o diretório correto do servidor (por exemplo, `/var/www/app`).
+
+Permissões: Defina as permissões de arquivos e diretórios (por exemplo, `chmod -R 755 /var/www/app`).
+
+4. Finalização
+Reiniciar o serviço: Reinicie o servidor web ou o processo da aplicação (por exemplo, `sudo systemctl restart nginx` ou `docker-compose restart`).
+
+Verificar site em produção: Abra o URL da aplicação em um navegador para confirmar se está funcionando.
+
+Limpeza (se houver backup): Exclua o diretório de backup antigo se a nova implantação estiver estável (por exemplo, `rm -rf /var/www/app_old`).

@@ -1,0 +1,57 @@
+Product Inventory Status (Simple List)
+
+Available Stock
+
+Product: Organic Coffee Beans (Code: G-401)
+Quantity: 450
+Status: In Stock
+
+Product: Smart Kitchen Scale (Code: K-119)
+Quantity: 12
+Status: Low Stock (Alert)
+
+Product: Bamboo Cutting Board (Code: B-772)
+Quantity: 280
+Status: In Stock
+
+Product: Deluxe Mixer Kit (Code: M-330)
+Quantity: 55
+Status: In Stock
+
+Unavailable Stock
+
+Product: Stainless Steel Mug (Code: T-905)
+Quantity: 0
+Status: Out of Stock
+
+Note: Next delivery expected December 5th.
+
+===
+
+Status do Estoque (Lista Simples)
+
+Estoque Disponível
+
+Produto: Grãos de Café Orgânico (Código: G-401)
+Quantidade: 450
+Status: Em estoque
+
+Produto: Balança de Cozinha Inteligente (Código: K-119)
+Quantidade: 12
+Status: Estoque baixo (Alerta)
+
+Produto: Tábua de Corte de Bambu (Código: B-772)
+Quantidade: 280
+Status: Em estoque
+
+Produto: Kit Mixer Deluxe (Código: M-330)
+Quantidade: 55
+Status: Em estoque
+
+Estoque Indisponível
+
+Produto: Caneca de Aço Inoxidável (Código: T-905)
+Quantidade: 0
+Status: Sem estoque
+
+Observação: Próxima entrega prevista para 5 de dezembro.

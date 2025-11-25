@@ -1,0 +1,6 @@
+pytest
+fastapi[all]
+fastapi
+uvicorn[standard]
+python-dotenv
+google-generativeai

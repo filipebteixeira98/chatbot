@@ -1,0 +1,40 @@
+General FAQ (Simple)
+
+Q: What is this service/product?
+A: It's a cloud-based platform designed for streamlined project management and team collaboration.
+
+Q: How much does it cost?
+A: We offer a Free tier, and our Pro plan starts at $15/month per user. See the Pricing page for details.
+
+Q: Is my data secure?
+A: Yes. We use 256-bit AES encryption and comply with major security standards like GDPR.
+
+Q: How do I reset my password?
+A: Click the "Forgot Password" link on the login screen and follow the instructions sent to your email.
+
+Q: Can I integrate it with other tools?
+A: Absolutely! We support integrations with Slack, GitHub, and numerous other third-party apps.
+
+===
+
+Perguntas Frequentes Gerais (Simples)
+
+P: O que é este serviço/produto?
+
+R: É uma plataforma em nuvem projetada para otimizar o gerenciamento de projetos e a colaboração em equipe.
+
+P: Quanto custa?
+
+R: Oferecemos um plano gratuito e nosso plano Pro começa em US$ 15/mês por usuário. Consulte a página de Preços para obter detalhes.
+
+P: Meus dados estão seguros?
+
+R: Sim. Usamos criptografia AES de 256 bits e cumprimos os principais padrões de segurança, como o GDPR.
+
+P: Como redefino minha senha?
+
+R: Clique no link "Esqueci minha senha" na tela de login e siga as instruções enviadas para o seu e-mail.
+
+P: Posso integrá-lo com outras ferramentas?
+
+R: Com certeza! Oferecemos integração com Slack, GitHub e diversos outros aplicativos de terceiros.

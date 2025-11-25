@@ -1,0 +1,229 @@
+:root {
+  --g1: #01bfac;
+  --g2: #00b262;
+  --g3: #9b5cff;
+  --g4: #ff6b6b;
+  --bg-overlay-opacity: 0.08;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body {
+    animation: none;
+    background-size: auto;
+  }
+}
+
+body {
+  background: radial-gradient(
+      circle at 15% 20%,
+      rgba(155, 92, 255, var(--bg-overlay-opacity)),
+      transparent 15%
+    ),
+    radial-gradient(
+      circle at 85% 80%,
+      rgba(0, 198, 255, var(--bg-overlay-opacity)),
+      transparent 18%
+    ),
+    linear-gradient(135deg, var(--g1), var(--g2) 40%, var(--g3) 70%, var(--g4));
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  min-height: 100vh;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(2, 6, 23, 0.08);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 24px 80px;
+  box-sizing: border-box;
+}
+
+.app-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.app-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin: 0;
+  color: #0f1724;
+  background: linear-gradient(90deg, #0665d9 0%, #9b5cff 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+@media (min-width: 768px) {
+  .app-title {
+    font-size: 1.5rem;
+  }
+}
+
+.logo-icon {
+  color: #0665d9;
+  flex-shrink: 0;
+}
+
+h1 {
+  color: #333;
+}
+
+.chat-window-wrapper {
+  position: relative;
+}
+
+.chat-placeholder {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-style: italic;
+  padding: 24px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 8px;
+}
+
+@media (max-width: 420px) {
+  .chat-placeholder {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
+
+.chat-window {
+  width: 600px;
+  max-width: calc(100vw - 160px);
+  min-width: 320px;
+  height: 75vh;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow-y: auto;
+  padding: 16px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.message {
+  padding: 10px 16px;
+  border-radius: 20px;
+  max-width: 75%;
+  word-wrap: break-word;
+  line-height: 1.5;
+}
+
+.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.bot,
+.error {
+  background-color: #e9e9eb;
+  color: #333;
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+
+.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.chat-form {
+  display: flex;
+  width: 600px;
+  max-width: calc(100vw - 160px);
+}
+
+.scroll-to-bottom {
+  position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 48px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #001d40;
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  font-size: 0.9rem;
+}
+
+.scroll-to-bottom:hover {
+  background: #002c55;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #151515;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
