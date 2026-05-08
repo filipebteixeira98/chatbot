@@ -1,4 +1,49 @@
-# Pixaflow — Simple RAG demo with Gemini (Gemini LLM)
+<h1 align="center"> AI Priori </h1>
+
+<p align="center">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/filipebteixeira98/chatbot?color=4129a3&style=flat-square">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/filipebteixeira98/chatbot?color=4129a3&style=flat-square">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/filipebteixeira98/chatbot?color=4129a3&style=flat-square">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/filipebteixeira98/chatbot?color=4129a3&style=flat-square">
+</p>
+
+<p align="center">
+  <img alt="AI priori" src="web/.github/mockup.png" width="100%">
+</p>
+
+Small React + TypeScript chat UI that talks to a backend LLM endpoint.  
+Uses Vite, React 19, TypeScript, lucide-react for icons.
+
+## 💻 Environment
+
+- API base URL is read from VITE_API_URL. Copy and edit:
+  - See [.env.example](.env.example)
+  - Create `.env` at project root with:
+    VITE_API_URL=http://localhost:8000
+- Vite reads .env on startup, so you need to restart dev server after changing.
+
+## 👷‍♂️ How to run
+
+Prerequisites
+
+- Node.js (16+ recommended)
+- npm
+
+```bash
+# Clone repository and enter folder
+git clone https://github.com/filipebteixeira98/chatbot.git
+cd chatbot/web
+
+# Install dependencies
+npm install
+
+# Run dev server
+npm run dev
+
+# Open http://localhost:5173 (Vite prints the exact URL)
+```
+
+# Simple RAG with Gemini (Gemini LLM)
 
 Small FastAPI project demonstrating a minimal Retrieval-Augmented Generation (RAG) setup that:
 
@@ -25,6 +70,9 @@ This repository is intentionally minimal so you can iterate quickly and test RAG
 ## 💻 Quickstart (Linux)
 
 ```bash
+# Navigate to the server directory
+cd server
+
 # Create virtualenv
 python3 -m venv .venv
 source .venv/bin/activate
